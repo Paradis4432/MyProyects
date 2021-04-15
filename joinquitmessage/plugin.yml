@@ -1,0 +1,6 @@
+name: JoinQuitMessage
+version: ${project.version}
+main: me.paradis.joinquitmessage.JoinQuitMessage
+api-version: 1.16
+authors: [ Paradis ]
+description: A message to show when you join and quit the game
