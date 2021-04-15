@@ -1,0 +1,13 @@
+name: LocateCommnadBlock
+version: ${project.version}
+main: me.paradis.blocklocate.locatecommnadblock.LocateCommnadBlock
+api-version: 1.16
+authors: [ Paradis, ThinkAlex ]
+description: A small plugin to block the Locate and Locatebiome Command
+commands:
+  locate:
+    description: "Locates an structure in the world"
+    usage: /locate [name]
+  locatebiome:
+    description: "Locates a biome in the world"
+    usage: /locatebiome [name]
