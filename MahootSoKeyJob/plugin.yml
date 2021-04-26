@@ -1,0 +1,6 @@
+name: Main
+version: ${project.version}
+main: me.paradis.general.main.Main
+api-version: 1.16
+authors: [ Paradis ]
+description: Gives a key to all online players
