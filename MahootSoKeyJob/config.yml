@@ -1,0 +1,5 @@
+enabled: true
+time: 10
+name: common
+type: Physical
+amount: 1
