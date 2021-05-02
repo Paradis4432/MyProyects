@@ -1,0 +1,10 @@
+name: Main
+version: ${project.version}
+main: me.paradis.main.Main
+api-version: 1.12
+authors: [ Paradis ]
+description: a bed plugin for Toxic
+commands:
+  beds:
+    description: "Adds/removes a default respawn location, Counts the amount of beds that you have active"
+    usage: /beds [add/remove/count/limit]
