@@ -1,0 +1,3 @@
+this is an unfinished proyect, made for a client wich canceled the plugin half way done 
+takes any items with any lore,enchants,name,amount from a config file and adds them to a chest thats drops from a dragon and spawns a firework on location of the chest
+idea taken from lemon server 
