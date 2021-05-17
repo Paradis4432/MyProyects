@@ -1,0 +1,49 @@
+name: Main
+version: ${project.version}
+main: me.paradis.main.Main
+api-version: 1.12
+authors: [ Paradis ]
+description: A chest plugin for Toxic
+commands:
+  chest:
+    description: "manages the chests in the world"
+    usage: /chest
+    aliases: [chests,ch]
+
+permissions:
+  chest.*:
+    default: op
+    children:
+      chest.add.*: true
+      chest.remove.*: true
+      chest.list.*: true
+      chest.replace.*: true
+      chest.set.chance: true
+      chest.force: true
+      chest.brake: true
+      chest.reload: true
+
+  chest.add.*:
+    default: op
+    children:
+      chest.add.location: true
+      chest.add.item: true
+
+  chest.remove.*:
+    default: op
+    children:
+      chest.remove.location: true
+      chest.remove.item: true
+
+  chest.list.*:
+    default: op
+    children:
+      chest.list.location: true
+      chest.list.item: true
+
+  chest.replace.*:
+    default: op
+    children:
+      chest.replace.location: true
+      chest.list.item: true
+
