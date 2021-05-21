@@ -42,27 +42,32 @@ public class NOTES {
 
     /chest
 chest add
-	location
+	location ---
 	loot
-		locationID
+		locationID ---
 	item
-		locationID lootID
+		locationID lootID ---
+
 chest remove
 	location
-		locationID
+		locationID -
 	loot
-		locationID lootID
+		locationID lootID -
 	item
-		locationID lootID itemID
+		locationID lootID itemID -
+
 chest replace
 	location
-		locationID
+		locationID -
 	item
-		locationID lootID itemID
+		locationID lootID itemID -
+
 chest list
-	location/locations/locationID
-		lootID
-chest admin
+	location/locations -
+	locationID
+		lootID -
+
+chest admin +
 	reload
 	give playerID locationID lootID
 			itemID

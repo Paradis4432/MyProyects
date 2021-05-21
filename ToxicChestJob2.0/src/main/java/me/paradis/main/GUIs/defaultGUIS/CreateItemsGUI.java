@@ -1,14 +1,14 @@
 package me.paradis.main.GUIs.defaultGUIS;
 
 import me.paradis.main.Main;
-import me.paradis.main.itemManager.get.GetAllItems;
-import me.paradis.main.locationManager.get.GetAllLocations;
+import me.paradis.main.itemManager.get.GetAllItemsFromLoot;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 
 public class CreateItemsGUI {
     public Inventory buidItems(Inventory inv, Integer pageId){
-        int totalItems = new GetAllItems().get();
+        /*
+        int totalItems = new GetAllItemsFromLoot().get();
         int slots = pageId * 29;
         int totalItemsToDosplay = Math.min(totalItems,slots);
 
@@ -18,7 +18,10 @@ public class CreateItemsGUI {
             inv.setItem(inv.firstEmpty(), itemStack);
         }
 
+
+         */
         return inv;
     }
+
 
 }

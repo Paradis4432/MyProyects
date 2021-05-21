@@ -1,14 +1,15 @@
 package me.paradis.main.GUIs.defaultGUIS;
 
 import me.paradis.main.Main;
-import me.paradis.main.itemManager.get.GetAllItems;
+import me.paradis.main.itemManager.get.GetAllItemsFromLoot;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 
 public class CreateLootsGUI {
 
     public Inventory buildItems(Inventory inv, Integer pageId){
-        int totalLoots = new GetAllItems().get();
+        /*
+        int totalLoots = new GetAllItemsFromLoot().get();
         int slots = pageId * 29;
         int totalLootsToDisplay = Math.min(totalLoots,slots);
 
@@ -17,6 +18,8 @@ public class CreateLootsGUI {
 
             inv.setItem(inv.firstEmpty(), itemStack);
         }
+
+         */
 
         return inv;
     }

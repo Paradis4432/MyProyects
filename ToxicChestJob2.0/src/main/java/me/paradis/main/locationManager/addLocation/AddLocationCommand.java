@@ -8,12 +8,13 @@ import org.bukkit.entity.Player;
 
 public class AddLocationCommand {
 
-    public void add(Player player){
+    public void add(Player player) {
 
-        if(Main.get().debugMode()) System.out.println("CHEST adding location");
+        if (Main.get().debugMode()) System.out.println("CHEST adding location");
 
         Integer locId = new GetAllLocations().get();
 
+        locId = locId + 1;
         Main.get().getConfig().set("locations." + locId + ".world", player.getWorld().getName());
         Main.get().getConfig().set("locations." + locId + ".X", player.getLocation().getBlockX());
         Main.get().getConfig().set("locations." + locId + ".Y", player.getLocation().getBlockY());
@@ -25,9 +26,9 @@ public class AddLocationCommand {
 
         Main.get().saveConfig();
 
-        new SpawnChest().spawnLocation(player.getLocation(),locId);
+        new SpawnChest().spawnLocation(player.getLocation(), locId);
 
-        if(Main.get().debugMode()) System.out.println("CHEST location added");
+        if (Main.get().debugMode()) System.out.println("CHEST location added");
 
         player.sendMessage(new GetMessage().get("locationAdded"));
     }

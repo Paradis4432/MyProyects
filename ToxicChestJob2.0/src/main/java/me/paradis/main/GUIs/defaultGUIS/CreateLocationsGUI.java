@@ -1,7 +1,6 @@
 package me.paradis.main.GUIs.defaultGUIS;
 
 import me.paradis.main.Main;
-import me.paradis.main.itemManager.get.GetAllItems;
 import me.paradis.main.locationManager.get.GetAllLocations;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
