@@ -1,0 +1,6 @@
+name: SpiderMan
+version: ${project.version}
+main: me.paradis.spiderman.SpiderMan
+api-version: 1.16
+authors: [ Paradis ]
+description: a plugin to swing like spiderman

@@ -1,0 +1,5 @@
+config:
+  enabled: true
+  prefix: 'SpiderMan'
+
+test: 'fuck covid'
