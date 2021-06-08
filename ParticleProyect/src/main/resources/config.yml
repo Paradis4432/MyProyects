@@ -1,0 +1,4 @@
+config:
+  prefix: '&6[&fMovingParticles&6]'
+  enabled: true
+

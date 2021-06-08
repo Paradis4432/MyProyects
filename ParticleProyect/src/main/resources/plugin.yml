@@ -1,0 +1,11 @@
+name: MovingParticle
+version: ${project.version}
+main: me.paradis.movingparticle.MovingParticle
+api-version: 1.16
+authors: [ Paradis ]
+description: a plugin to add particles on player movement, designed for prison servers mainly 
+commands:
+  particles:
+    description: "Opens the gui to choose what action take"
+    usage: /particles
+    aliases: [mv/par]
